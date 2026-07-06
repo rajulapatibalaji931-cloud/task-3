@@ -1,0 +1,307 @@
+/* Google Font */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+/* Hero Section */
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+}
+
+/* Navbar */
+nav{
+    position:relative;
+    z-index:2;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+}
+
+.logo{
+    width:170px;
+}
+
+.signin-btn{
+    background:#e50914;
+    color:#fff;
+    border:none;
+    padding:10px 22px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+.signin-btn:hover{
+    background:#c11119;
+}
+
+/* Hero Content */
+.hero-content{
+    position:relative;
+    z-index:2;
+    height:80%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.hero-content h3{
+    font-size:28px;
+    margin-bottom:20px;
+    font-weight:400;
+}
+
+.hero-content p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+/* Email Box */
+.email-box{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.email-box input{
+    width:350px;
+    max-width:90%;
+    padding:16px;
+    border:none;
+    border-radius:5px;
+    font-size:17px;
+    outline:none;
+}
+
+.email-box button{
+    background:#e50914;
+    color:white;
+    border:none;
+    padding:16px 30px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.email-box button:hover{
+    background:#c11119;
+}
+
+/* Trending Section */
+.movies{
+    padding:60px 8%;
+}
+
+.movies h2{
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+.movie-row{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    padding-bottom:10px;
+}
+
+.movie-row img{
+    width:220px;
+    border-radius:10px;
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.movie-row img:hover{
+    transform:scale(1.08);
+}
+
+/* Hide Scrollbar */
+.movie-row::-webkit-scrollbar{
+    display:none;
+}
+
+/* Reasons */
+.reasons{
+    padding:60px 8%;
+}
+
+.reasons h2{
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1a1a1a;
+    padding:30px;
+    border-radius:10px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#2d2d2d;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#e50914;
+}
+
+.card p{
+    color:#ddd;
+    line-height:1.6;
+}
+
+/* FAQ */
+.faq{
+    padding:60px 8%;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.accordion{
+    width:100%;
+    background:#2d2d2d;
+    color:white;
+    padding:20px;
+    text-align:left;
+    font-size:22px;
+    border:none;
+    margin-top:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.accordion:hover{
+    background:#444;
+}
+
+.panel{
+    display:none;
+    background:#1d1d1d;
+    padding:20px;
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    padding:50px 8%;
+    margin-top:50px;
+}
+
+footer p{
+    margin-bottom:20px;
+    color:#aaa;
+}
+
+.footer-links{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.footer-links a{
+    color:#aaa;
+    text-decoration:none;
+}
+
+.footer-links a:hover{
+    color:white;
+}
+
+.copyright{
+    text-align:center;
+    color:#777;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:40px;
+}
+
+.hero-content h3{
+    font-size:22px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.logo{
+    width:130px;
+}
+
+.email-box{
+    flex-direction:column;
+    align-items:center;
+}
+
+.email-box input{
+    width:100%;
+}
+
+.email-box button{
+    width:100%;
+}
+
+.movie-row img{
+    width:160px;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.accordion{
+    font-size:18px;
+}
+
+}
