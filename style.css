@@ -1,4 +1,3 @@
-/* Google Font */
 *{
     margin:0;
     padding:0;
@@ -10,8 +9,6 @@ body{
     background:#000;
     color:#fff;
 }
-
-/* Hero Section */
 .hero{
     position:relative;
     width:100%;
@@ -27,8 +24,6 @@ body{
     height:100%;
     background:rgba(0,0,0,0.7);
 }
-
-/* Navbar */
 nav{
     position:relative;
     z-index:2;
@@ -57,7 +52,6 @@ nav{
     background:#c11119;
 }
 
-/* Hero Content */
 .hero-content{
     position:relative;
     z-index:2;
@@ -86,8 +80,6 @@ nav{
     font-size:18px;
     margin-bottom:25px;
 }
-
-/* Email Box */
 .email-box{
     display:flex;
     gap:10px;
@@ -119,8 +111,6 @@ nav{
 .email-box button:hover{
     background:#c11119;
 }
-
-/* Trending Section */
 .movies{
     padding:60px 8%;
 }
@@ -147,13 +137,9 @@ nav{
 .movie-row img:hover{
     transform:scale(1.08);
 }
-
-/* Hide Scrollbar */
 .movie-row::-webkit-scrollbar{
     display:none;
 }
-
-/* Reasons */
 .reasons{
     padding:60px 8%;
 }
@@ -191,7 +177,6 @@ nav{
     line-height:1.6;
 }
 
-/* FAQ */
 .faq{
     padding:60px 8%;
 }
@@ -226,8 +211,6 @@ nav{
     font-size:18px;
     line-height:1.6;
 }
-
-/* Footer */
 footer{
     background:#111;
     padding:50px 8%;
@@ -259,8 +242,6 @@ footer p{
     text-align:center;
     color:#777;
 }
-
-/* Responsive */
 @media(max-width:768px){
 
 .hero-content h1{
